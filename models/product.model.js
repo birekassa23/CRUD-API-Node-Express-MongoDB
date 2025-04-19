@@ -8,14 +8,17 @@ const productSchema = new mongoose.Schema(
       type: String,
       required: [true, "Please provide product name"],
     },
+
     price: {
       type: Number,
       required: [true, "Please provide product price"],
     },
+
     description: {
       type: String,
       required: false,
     },
+    
   },
   { timestamps: true }
 );
